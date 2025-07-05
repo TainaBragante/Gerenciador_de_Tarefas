@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #36699c;
+  --secondary-color: #198a19;
+  --error-color:   #d32f2f;
+  --delete-color:  #d32f2f;
+  --font-family:   'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  background:   #999595;
+  color:        #2c2c2c;
+}
+
+
+/* HOME */
+.app-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  margin-right: 1.1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkbox-group > label {
+  display: inline;
+  margin: 0;
+}
+
+
+.input-error {
+  border-color: var(--error-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: .875rem;
+  margin-top: .25rem;
+}
+
+.goTopageTasks {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.goTopageTasks:hover {
+  opacity: .9;
+  transition: .45s;
+}
+
+
+/* TASK */
+
+.add-task-button{
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .70rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-task-button:hover {
+  opacity: 0.9;
+  transition: 0.45s;
+}
+
+.task-item-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+li.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  margin-left: -40px;
+  list-style: square;
+}
+
+.details-button {
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.details-button:hover {
+  background: var(--secondary-color);
+  color: #fff;
+  transition: .4s;
+}
+
+.delete-button {
+  background: var(--delete-color);
+  border: none;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete-button:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+
+/* TASK DETAILS*/
+
+#back-list{
+    background: #198a19;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#back-list:hover {
+  opacity: 0.9;
+  transition: 0.45s;
+}
+
+#detailed{
+    border-bottom: 1px solid #ddd;
+}
