@@ -10,6 +10,7 @@ Clone o repositório completo.
 No terminal, execute os comandos:
 
 ```
+cd meu-app
 npm install
 npm run dev
 ```
