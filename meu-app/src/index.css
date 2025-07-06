@@ -164,3 +164,23 @@ li.task-item {
 #detailed{
     border-bottom: 1px solid #ddd;
 }
+
+
+/* NOTFOUND */
+
+.btn-home{
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: .75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.btn-home:hover {
+  opacity: .9;
+  transition: .45s;
+}

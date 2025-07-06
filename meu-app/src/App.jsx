@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Tasks from './pages/Tasks'
 import TaskDetails from './pages/TaskDetails'
+import NotFound from './pages/NotFound'
+
 
 export default function App() {
   return (
@@ -19,6 +21,7 @@ export default function App() {
           <Route path='/' element={<Home />} />
           <Route path='/tasks' element={<Tasks />} />
           <Route path='/task/:id' element={<TaskDetails />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>  
 
       </BrowserRouter>
