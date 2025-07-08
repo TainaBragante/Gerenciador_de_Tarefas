@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Logouser from "../components/user"
 
 
 export default function Tasks() {
@@ -44,6 +45,8 @@ export default function Tasks() {
 
   return (
     <div className="app-container">
+
+      <Logouser />
 
       <h1>Gerenciador de Tarefas</h1>
 

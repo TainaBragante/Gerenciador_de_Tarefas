@@ -54,7 +54,6 @@ body {
   margin: 0;
 }
 
-
 .input-error {
   border-color: var(--error-color);
 }
@@ -83,7 +82,6 @@ body {
 
 
 /* TASK */
-
 .add-task-button{
     background: var(--primary-color);
     color: #fff;
@@ -123,6 +121,7 @@ li.task-item {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .details-button:hover {
   background: var(--secondary-color);
   color: #fff;
@@ -137,6 +136,7 @@ li.task-item {
   border-radius: 4px;
   cursor: pointer;
 }
+
 .delete-button:hover {
   opacity: 0.8;
   transition: 0.4s;
@@ -144,7 +144,6 @@ li.task-item {
 
 
 /* TASK DETAILS*/
-
 #back-list{
     background: #198a19;
     color: #fff;
@@ -167,7 +166,6 @@ li.task-item {
 
 
 /* NOTFOUND */
-
 .btn-home{
   background: var(--primary-color);
   color: #fff;
@@ -183,4 +181,12 @@ li.task-item {
 .btn-home:hover {
   opacity: .9;
   transition: .45s;
+}
+
+
+/* USUARIO */
+.user {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }

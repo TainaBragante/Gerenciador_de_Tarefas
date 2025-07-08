@@ -1,5 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Logouser from "../components/user"
 
 
 export default function TaskDetails() {
@@ -20,8 +21,9 @@ export default function TaskDetails() {
   if (!task) {
     return (
       <div className="app-container">
+        <Logouser />
         <h1>Tarefa não encontrada</h1>
-        <button onClick={() => navigate("/tasks")}>
+        <button id="back-list" onClick={() => navigate("/tasks")}>
           Voltar à lista
         </button>
       </div>
@@ -30,6 +32,7 @@ export default function TaskDetails() {
 
   return (
     <div className="app-container">
+      <Logouser />
       <h1>{task.title}</h1>
       <p id="detailed">{task.description}</p>
       <button id="back-list" onClick={() => navigate("/tasks")}>
